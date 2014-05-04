@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Text Twist</title>
+    <link rel="stylesheet" type="text/css" href="css/yeti/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+	  <link rel="stylesheet" type="text/css" href="css/twist_style.css" />
+  </head>
+  <body class="yeti">
+  <div class="site-wrapper">
+    <div class="site-wrapper-inner">
+      <div class="cover-container">
+        <div class="inner cover">
+          <div id="board">
+            <div id="words"></div>
+            <div id="letters"></div>
+          </div>
+          <div id="alert" class="alert alert-success">
+            <p>Correct</p>
+          </div>
+          <div id="scoreboard">
+            <span>Score: <span id="scorekeeper">0</span></span>
+          </div>
+          <div id="timer">
+            <p>Spacebar: <span>Shuffle</span></p>
+            <p>Enter: <span>Submit / Retrieve Last Word</span></p>
+            <span>Timer:  <span id="timekeeper">02:00</span></span>
+          </div>
+          <div id="modalBox" class="modal fade">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 id="modTitle" class="modal-title">Round Complete</h4>
+                </div>
+                <div class="modal-body">
+                  <div id="next_level" class="content" style="display: none;">
+                    <p>Congratulations, you are eligible for the next round!</p>
+                    <p class="scores">Current Score: <span class="current_score"></span></p>
+                    <p class="scores">Current Round: <span class="current_round"></span></p>
+                  </div>
+                  <div id="start_game" class="content" style="display: none;">
+                    <p>Click anywhere to begin.</p>
+                    <p class="note"><b>NOTE</b>: This game is old, HTML5 had little support. 
+                    I am working on a Canvas based one that will hopefully be available
+                    soon.</p>
+                  </div>
+                  <div id="game_over" class="content" style="display: none">
+                    <p>Sorry, you are not eligible for the next round.</p>
+                    <p class="scores">Final Score: <span class="current_score"></span></p>
+                    <p class="scores">Final Round: <span class="current_round"></span></p>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button id="lb" type="button" class="btn btn-danger">Finish</button>
+                  <button id="rb" type="button" class="btn btn-success">Continue</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/global.js"></script>
+  <script type="text/javascript" src="js/bytes.js"></script>
+  <script type="text/javascript" src="js/TwistText.js"></script>
+  <div id="overlay"></div>
+  </body>
+</html>
+

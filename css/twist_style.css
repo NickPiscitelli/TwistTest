@@ -1,0 +1,199 @@
+ #board{
+  width: 100%;
+  height: 500px;
+  position: relative;
+ }
+
+ .modal{
+  text-align: left;
+  color: #333;
+  text-shadow: none;
+ }
+ .modal h4{
+  font-weight: bold;
+  font-size: 1.3em;
+ }
+ #words{ 
+     height: 350px;
+     width: 100%;
+     top: 0;
+ }
+ div.letterContain{
+ 	 float: left;
+ 	 width: 50px;
+
+ }
+ #start_game {
+  text-align: center;
+  font-size: 1.4em;
+ }
+ p.note{
+  text-align: center;
+  font-size: .6em;
+  margin-top: 2em;
+ }
+ p.letter{
+ 	 font-size: 14px;
+   color: #333;
+   text-shadow: 0;
+ }
+ #overlay{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: black;
+  opacity: .7;
+  z-index: 99;
+ }
+ #start_game{
+  z-index: 100;
+ }
+
+ #timer p {
+   margin: 0;
+   padding: 0;
+   font-size: .8em;
+ }
+ div.wordPlace{
+     width: 100px;
+     height: 35px;
+     background: white;
+     border-radius: 8px;
+     position: absolute;
+     border: 2px solid #E2D7D7;
+     box-shadow: 2px 2px 3px rgba(50, 50, 50, 0.55);
+ }
+
+ #letters{
+     height:100px;
+     margin: 0 auto;
+     position: relative;
+     width: 485px;
+     margin-top: 12px;
+ }
+ div.letterContain{
+     position: absolute;
+     top: 75px;
+ }
+ #tileContain{
+     margin: auto;
+     width: 800px;
+ }div.tileBoard{
+     
+ }
+ span.letterPlace{
+     line-height: 29px;
+     font-size: 27px;
+     text-transform: uppercase;
+     text-align: center;
+     color: #444;
+ }
+ .letterContain{
+    width: 55px;
+    height: 45px;
+    border: 2px solid #CCC;
+    border-radius: 8px;
+    box-shadow: 2px 2px 3px rgba(50, 50, 50, 0.55);
+color: #444;
+text-transform: uppercase;
+
+}
+
+.shadow{
+    -webkit-box-shadow: inset 0px 0px 35px #55ff00;
+    -moz-box-shadow: inset 0px 0px 35px #55ff00;
+    box-shadow: inset 0px 0px 35px #55ff00;
+}
+.shadowerror{
+  -webkit-box-shadow: 0px 0px 35px #f00 inset;
+    -moz-box-shadow: 0px 0px 35px #f00 inset;
+    box-shadow: 0px 0px 35px #f00 inset;
+}
+.site-wrapper{
+
+      -webkit-transition: box-shadow 5s linear;
+    -o-transition: box-shadow 5s linear;
+    -moz-transition: box-shadow 5s linear;
+    -ms-transition: box-shadow .5s linear;
+    -kthtml-transition: box-shadow .5s linear;
+    transition: box-shadow .5s linear;
+}
+p.letter{
+    font-size: 25px;
+    line-height: 39px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+#stats{
+  left: 10px;
+  top: 10px;
+  position: fixed;
+}
+body{
+  overflow: hidden;
+  -webkit-transition: box-shadow 0.3s ease-in-out 0s;
+-moz-transition: box-shadow 0.3s ease-in-out 0s;
+-o-transition: box-shadow 0.3s ease-in-out 0s;
+-ms-transition: box-shadow 0.3s ease-in-out 0s;
+transition: box-shadow 0.3s ease-in-out 0s; 
+}
+#alert{
+  position: absolute;
+  top: 100px;
+  left:50%;
+  margin-left:-200px;
+  width: 400px;
+  text-align: center;
+  font-size: 1.3em;
+  display: block;
+  z-index: 9;
+  opacity: 0;
+    -webkit-transition: opacity 25s linear;
+    -o-transition: opacity 25s linear;
+    -moz-transition: opacity 25s linear;
+    -ms-transition: opacity .25s linear;
+    -kthtml-transition: opacity .25s linear;
+    transition: opacity .25s linear;
+}
+.success{
+  background: green;
+}
+.error{
+  background: red;
+}
+#game_over, #next_level {
+  text-align: center;
+  padding: 10px;
+}
+#game_over a, #next_level a{
+  text-decoration: underline;
+}
+#game_over a:hover, #next_level a:hover{
+  text-decoration: none;
+}
+#scoreboard, #timer{
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  font-size: 1.4em;
+  text-align: left;
+}
+#scoreboard{
+  right: 25px;
+  text-align: right;
+}
+#timer{
+  left: 0;
+}
+#timekeeper.ending{color: #F00;}
+div.nopad p {
+  padding: 0;
+}
+p.browser{
+  color: red;
+  text-decoration: italic;
+}
+ #timer, #scoreboard{
+   top: 50px;
+}
